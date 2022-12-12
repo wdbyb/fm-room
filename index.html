@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./assets/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>Room</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="hero flex flex-col lg:flex-row">
+      <div class="swiper w-full lg:w-7/12 h-96 lg:h-auto relative">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">
+            <img class="absolute w-full h-full object-cover md:object-right" src="./assets/desktop-image-hero-1.jpg"
+              alt="">
+          </div>
+          <div class="swiper-slide ">
+            <img class="absolute w-full h-full object-cover md:object-right" src="./assets/desktop-image-hero-2.jpg"
+              alt="">
+          </div>
+          <div class="swiper-slide ">
+            <img class="absolute w-full h-full object-cover md:object-right" src="./assets/desktop-image-hero-3.jpg"
+              alt="">
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-5/12 font-main text-black font-medium relative p-8 py-16 lg:p-8 lg:p-12 xl:p-24">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Discover innovative ways to decorate</h1>
+        <p class="text-darkGray text-base tracking-tight mb-6">We provide unmatched quality, comfort, and style
+          for
+          property
+          owners across the country. Our experts combine form and function in bringing your vision to life. Create a
+          room in your own style with our collection and make your property a reflection of you and what you love.</p>
+        <button class="btn-cta text-base tracking-widest uppercase flex items-center gap-8 hover:text-darkGray">
+          <span>Shop Now</span>
+          <svg class="-mt-2" width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+              fill="currentColor" />
+          </svg>
+        </button>
+        <div class="absolute z-10 flex w-40 h-20 -top-20 right-0 lg:bottom-0 lg:left-0 lg:top-auto lg:right-auto">
+          <button class="swiper-button-prev w-1/2 bg-black flex items-center justify-center hover:bg-veryDarkGray">
+            <img src="./assets/icon-angle-left.svg" alt="">
+          </button>
+          <button class="swiper-button-next w-1/2 bg-black flex items-center justify-center hover:bg-veryDarkGray">
+            <img src="./assets/icon-angle-right.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="w-full h-64 max-w-12 relative md:h-auto">
+        <img class="absolute w-full h-full object-cover" src="./assets/image-about-dark.jpg" alt="">
+      </div>
+      <div class="w-full md:w-2/5 shrink-0 text-base px-8 py-12 md:p-12">
+        <h2 class="font-bold uppercase mb-4">About Our Furniture</h2>
+        <p class="text-darkGray">Our multifunctional collection blends design and function to suit your individual
+          taste. Make each room
+          unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything in between. Product specialists are
+          available to help you create your dream space. </p>
+      </div>
+      <div class="w-full relative h-64 md:h-auto">
+        <img class="absolute w-full h-full object-cover" src="./assets/image-about-light.jpg" alt="">
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

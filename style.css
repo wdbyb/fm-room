@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+}
+
+#app {
+  min-height: 100%;
+}
+
+.hero {
+  min-height: 33.375rem;
+}
+
+.btn-cta {
+  letter-spacing: 12.5px;
+}
