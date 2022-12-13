@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/wdbyb/fm-room/)
-- Live Site URL: [Add live site URL here](https://fm-room-pi.vercel.app/)
+- Solution URL: [Github](https://github.com/wdbyb/fm-room/)
+- Live Site URL: [Website](https://fm-room-pi.vercel.app/)
 
 ## My process
 
