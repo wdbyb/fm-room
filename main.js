@@ -1,8 +1,6 @@
-import './style.css';
-// import Swiper JS
-import Swiper, { Navigation } from 'swiper';
-// import Swiper styles
 import 'swiper/css';
+import './style.css';
+import Swiper, { Navigation } from 'swiper';
 
 const swiper = new Swiper('.swiper', {
   modules: [Navigation],
@@ -11,4 +9,10 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+const menuBtn = document.getElementById('menu-btn');
+
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('open');
 });

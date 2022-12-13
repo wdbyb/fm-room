@@ -17,3 +17,65 @@ body {
 .btn-cta {
   letter-spacing: 12.5px;
 }
+
+.about-title {
+  letter-spacing: 5.5px;
+}
+
+.menu {
+  transition: all 0.25s;
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 24px;
+  cursor: pointer;
+  width: 20px;
+  height: 14px;
+  transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  transform: rotate(0);
+  transition: all 0.5s;
+  background: white;
+}
+
+.hamburger-middle {
+  top: calc(50% - 1px);
+}
+
+.hamburger-bottom {
+  top: calc(100% - 1px);
+}
+
+.open.hamburger {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translate(4px, 5px);
+  background: #979797;
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translate(4px, -5px);
+  background: #979797;
+}
+
+.open + .menu {
+  opacity: 1;
+}

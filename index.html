@@ -9,28 +9,66 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
   <title>Room</title>
+  <meta name="description" content="Discover innovative ways to decorate!">
 </head>
 
 <body>
-  <div id="app">
+  <div id="app relative">
+    <div class="absolute flex items-center justify-center w-full px-6 py-12 lg:p-16 z-20 lg:justify-start">
+      <div class="lg:mr-16">
+        <img class="w-full" width="62" height="14" src="./assets/logo.svg" alt="Logo">
+      </div>
+      <button class="hamburger z-10 lg:hidden focus:outline-none" id="menu-btn" type="button" aria-label="Open menu">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+      <div
+        class="menu flex opacity-0 lg:opacity-100 items-center justify-end lg:justify-start bg-white lg:bg-transparent absolute lg:relative w-full p-12 lg:p-0">
+        <ul class="flex items-center gap-6 text-black lg:text-white font-semibold ">
+          <li><a href="#">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="hero flex flex-col lg:flex-row">
       <div class="swiper w-full lg:w-7/12 h-96 lg:h-auto relative">
         <div class="swiper-wrapper">
           <div class="swiper-slide ">
-            <img class="absolute w-full h-full object-cover md:object-right" src="./assets/desktop-image-hero-1.jpg"
-              alt="">
+            <picture>
+              <source type="image/webp"
+                srcset="./assets/desktop-image-hero-1.webp 840w, ./assets/desktop-image-hero-1@2x.webp 1680w">
+              <img class="absolute w-full h-full object-cover md:object-right" width="840" height="534"
+                src="./assets/desktop-image-hero-1.jpg"
+                srcset="./assets/desktop-image-hero-1.jpg 840w, ./assets/desktop-image-hero-1@2x.jpg 1680w"
+                alt="Furniture first">
+            </picture>
           </div>
           <div class="swiper-slide ">
-            <img class="absolute w-full h-full object-cover md:object-right" src="./assets/desktop-image-hero-2.jpg"
-              alt="">
+            <picture>
+              <source type="image/webp"
+                srcset="./assets/desktop-image-hero-2.webp 840w, ./assets/desktop-image-hero-2@2x.webp 1680w">
+              <img class="absolute w-full h-full object-cover md:object-right" width="840" height="534"
+                src="./assets/desktop-image-hero-2.jpg"
+                srcset="./assets/desktop-image-hero-2.jpg 840w, ./assets/desktop-image-hero-2@2x.jpg 1680w"
+                alt="Furniture second">
+            </picture>
           </div>
           <div class="swiper-slide ">
-            <img class="absolute w-full h-full object-cover md:object-right" src="./assets/desktop-image-hero-3.jpg"
-              alt="">
+            <picture>
+              <source type="image/webp"
+                srcset="./assets/desktop-image-hero-3.webp 840w, ./assets/desktop-image-hero-3@2x.webp 1680w">
+              <img class="absolute w-full h-full object-cover md:object-right" width="840" height="534"
+                src="./assets/desktop-image-hero-3.jpg"
+                srcset="./assets/desktop-image-hero-3.jpg 840w, ./assets/desktop-image-hero-3@2x.jpg 1680w"
+                alt="Furniture third">
+            </picture>
           </div>
         </div>
       </div>
-      <div class="w-full lg:w-5/12 font-main text-black font-medium relative p-8 py-16 lg:p-8 lg:p-12 xl:p-24">
+      <div class="w-full lg:w-5/12 font-main text-black font-medium relative p-8 py-16 lg:p-12 xl:p-24">
         <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Discover innovative ways to decorate</h1>
         <p class="text-darkGray text-base tracking-tight mb-6">We provide unmatched quality, comfort, and style
           for
@@ -46,29 +84,43 @@
           </svg>
         </button>
         <div class="absolute z-10 flex w-40 h-20 -top-20 right-0 lg:bottom-0 lg:left-0 lg:top-auto lg:right-auto">
-          <button class="swiper-button-prev w-1/2 bg-black flex items-center justify-center hover:bg-veryDarkGray">
-            <img src="./assets/icon-angle-left.svg" alt="">
+          <button class="swiper-button-prev w-1/2 bg-black flex items-center justify-center hover:bg-veryDarkGray"
+            aria-label="Slide picture back">
+            <img width="14" height="24" src="./assets/icon-angle-left.svg" alt="Icon arrow left">
           </button>
-          <button class="swiper-button-next w-1/2 bg-black flex items-center justify-center hover:bg-veryDarkGray">
-            <img src="./assets/icon-angle-right.svg" alt="">
+          <button class="swiper-button-next w-1/2 bg-black flex items-center justify-center hover:bg-veryDarkGray"
+            aria-label="Slide picture next">
+            <img width="14" height="24" src="./assets/icon-angle-right.svg" alt="Icon arrow right">
           </button>
         </div>
       </div>
     </div>
     <div class="flex flex-col md:flex-row">
       <div class="w-full h-64 max-w-12 relative md:h-auto">
-        <img class="absolute w-full h-full object-cover" src="./assets/image-about-dark.jpg" alt="">
+        <picture>
+          <source type="image/webp"
+            srcset="./assets/image-about-dark.webp 420w, ./assets/image-about-dark@2x.webp 840w">
+          <img class="absolute w-full h-full object-cover" width="420" height="266" src="./assets/image-about-dark.jpg"
+            srcset="./assets/image-about-dark.jpg 420w, ./assets/image-about-dark@2x.jpg 840w" alt="Dark furniture">
+        </picture>
       </div>
-      <div class="w-full md:w-2/5 shrink-0 text-base px-8 py-12 md:p-12">
-        <h2 class="font-bold uppercase mb-4">About Our Furniture</h2>
-        <p class="text-darkGray">Our multifunctional collection blends design and function to suit your individual
+      <div class="w-full md:w-2/5 shrink-0 text-base px-6 py-12 md:p-12">
+        <h2 class="about-title font-bold uppercase mb-4">About Our Furniture</h2>
+        <p class="text-darkGray tracking-tight font-medium">Our multifunctional collection blends design and function to
+          suit your
+          individual
           taste. Make each room
           unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture
           pieces you need, from traditional to contemporary styles or anything in between. Product specialists are
           available to help you create your dream space. </p>
       </div>
       <div class="w-full relative h-64 md:h-auto">
-        <img class="absolute w-full h-full object-cover" src="./assets/image-about-light.jpg" alt="">
+        <picture>
+          <source type="image/webp"
+            srcset="./assets/image-about-light.webp 440w, ./assets/image-about-light@2x.webp 880w">
+          <img class="absolute w-full h-full object-cover" width="440" height="266" src="./assets/image-about-light.jpg"
+            srcset="./assets/image-about-light.jpg 440w, ./assets/image-about-light@2x.jpg 880w" alt="Light furniture">
+        </picture>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
